@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Lato", sans-serif;
   color: #333;
@@ -121,7 +122,8 @@ pre {
 }
 .stats-heading {
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 .stats .grid h3 {
   font-size: 35px;
@@ -202,11 +204,12 @@ pre {
 
 /* Footer */
 .footer .social a {
-  margin: 0 10px;
-  transition: ease-in 0.5s;
+  margin: 0 10px !important;
+  transition: ease-in 1s !important;
 }
-.footer .social a:hover {
-  transform: translateY(-15px);
+.footer .social i:hover {
+  transform: translateY(-15px) !important;
+  transition: ease-in 0.4s;
 }
 /* Hamburger */
 .bars {
@@ -276,7 +279,7 @@ pre {
     grid-template-columns: 1fr;
     grid-row: 1fr;
   }
-  .navbar{
+  .navbar {
     animation: slideInFromTop 1s ease-in;
   }
   .showcase {
